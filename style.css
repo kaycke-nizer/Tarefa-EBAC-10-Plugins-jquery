@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32pt;
+    margin: 26px;
+}
+
+form {
+    margin: 16px;
+    padding: 26px;
+    border-radius: 16px;
+    display: inline-block;
+
+    max-width: 920px;
+    background-color: rgb(219, 219, 219);
+}
+
+form div input {
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+    font-size: large;
+    padding: 10px 32px;
+}
+
+.elemento_escondido {
+    display: none;
+}
+
+#nome_rua {
+    min-width: 220px;
+    width: 60%;
+}
+
+#numero_casa {
+    width: 40px;
+}
