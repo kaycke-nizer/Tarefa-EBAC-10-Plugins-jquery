@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarefa 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    
+    <header>
+        <h1>Tarefa 10 EBAC: Formulário de cadastro</h1>
+    </header>
+    <p>Descrição: Crie um formulário de cadastro contendo nome completo, e-mail, telefone, CPF, endereço completo e CEP. Utilize o plugin JQuery para aplicar máscara aos campos CPF, telefone e CEP.</p>
+
+    <form>
+        <h2>Informações pessoais:</h2>
+        <div id="espaco_nome">
+            <label for="primeiro_nome">Primeiro nome:</label>
+            <input id="primeiro_nome" type="text" required>
+            <label for="ultimo_nome">Sobrenome:</label>
+            <input id="ultimo_nome" type="text" required>
+        </div>
+        <label for="telefone1">Celular:</label>
+        <input id="telefone1" class="telefone" type="tel" required>
+        <label for="telefone2">Telefone:</label>
+        <input id="telefone2" class="telefone" type="tel">
+        <div id="espaco_documentos">
+            <label for="cpf">CPF:</label>
+            <input id="cpf" type="text" required>
+            <label for="rg">RG:</label>
+            <input id="rg" type="text" required>
+        </div>
+        <label for="endereco_eletronico">E-mail: </label>
+        <input id="endereco_eletronico" type="email">
+        <div id="espaco_endereco">
+            <h3>Endereço:</h3>
+            <label for="nome_rua">Rua:</label>
+            <input id="nome_rua" type="text" required>
+            <label for="numero_casa">Nº</label>
+            <input id="numero_casa" type="text">
+            
+        </div>
+        <label for="CEP">CEP:</label>
+        <input id="CEP" type="text" required>
+        <br>
+        <button id="botao" type="submit">Enviar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
